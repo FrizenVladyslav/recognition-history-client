@@ -1,0 +1,9 @@
+{
+  "presets": ["@babel/preset-react"],
+  "plugins": [
+    "transform-runtime","transform-decorators-legacy",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
+    // ["@babel/plugin-proposal-class-properties", { "loose": true }]
+    
+  ]
+}

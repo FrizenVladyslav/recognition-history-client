@@ -1,0 +1,20 @@
+
+//add font
+@mixin fontFace($name, $path, $svg) {
+  @font-face {
+    font-family: $name;
+    src: url(#{$path+'.eot?'}) format('eot'),
+      url(#{$path+'.woff'}) format('woff'),
+      url(#{$path+'.ttf'}) format('truetype'),
+      url(#{$path+'.svg#'+$svg}) format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+//create container breakpoint & size
+@mixin make-container ($width) {
+  @media (min-width: $width) {
+    .container { width: $width }
+  }
+}

@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto !important;
+
+  :global .ant-form {
+    &-item { margin-bottom: 0 }
+  }
+  
+  > * { width: 100% }
+  > button {
+    width: 40%;
+    margin-top: 20px;
+  }
+  .uploader {
+    :global .ant-upload {
+      height: 180px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.image {
+  > img { max-width: 100% }
+}
+
+.btnGroup {
+  padding: 100px;
+  display: flex !important;
+  justify-content: center;
+}
