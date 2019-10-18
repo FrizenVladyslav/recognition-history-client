@@ -2,4 +2,11 @@
   display: block;
   width: 70% !important;
   margin: 10px auto 60px !important;
+
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
+  @media (max-width: 462px) {
+    width: 90% !important;
+  }
 }

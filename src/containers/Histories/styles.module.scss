@@ -13,4 +13,8 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    .input { width: 70vw; }    
+  }
 }

@@ -2,8 +2,9 @@
 @import './variables.scss';
 
 .container {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 
@@ -21,4 +22,5 @@ body,
 #root {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }

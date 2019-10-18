@@ -11,11 +11,11 @@ interface IProps extends Pick<IHistory, 'img' | 'tags'> {
 const History: React.FC<IProps> = ({ img, tags, loading }) => {
   return (
     <section>
-      <Row gutter={30} type="flex" justify="center">
-        <Col sm={8} className={styles.image}>
+      <Row gutter={30} type="flex" justify="center" className={styles.history}>
+        <Col lg={8} className={styles.image}>
           <img src={img} alt="history" />
         </Col>
-        <Col sm={7}>
+        <Col lg={7}>
           <Spin spinning={loading === true}>
             {tags.map(({ confidence, tag: { en } }) => (
               <Progress key={en} percent={confidence} format={() => en} />
